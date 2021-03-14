@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="mensaje">
+            <h2><span>Mensaje</span> {{ mensaje.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span>Body</span></dt>
+                <dd>
+                    <span>{{ mensaje.body }}</span>
+                </dd>
+                <dt><span>Usuario</span></dt>
+                <dd>
+                    <div *ngIf="mensaje.usuario">
+                        <a [routerLink]="['/usuario', mensaje.usuario?.id, 'view']">{{ mensaje.usuario?.username }}</a>
+                    </div>
+                </dd>
+                <dt><span>Tema</span></dt>
+                <dd>
+                    <div *ngIf="mensaje.tema">
+                        <a [routerLink]="['/tema', mensaje.tema?.id, 'view']">{{ mensaje.tema?.title }}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span>Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/mensaje', mensaje.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span>Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
