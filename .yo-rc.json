@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.appopiniones"
+    },
+    "jhipsterVersion": "6.10.5",
+    "applicationType": "monolith",
+    "baseName": "appopiniones",
+    "packageName": "com.appopiniones",
+    "packageFolder": "com/appopiniones",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Memory",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NzM5NTQ2YThhNzJhZDM0NjQ0MWE3MWUxMTFkM2FjMmM5ZDM0YzNiMTBlZTBhYzU2N2I4ZjBmMmUzOTg4ZWVkOTViMmUzYjA3Y2Y2NWFiMmRjNWYzMTQyNWJlMWI0ZmU3MmEyNTY3YjYzNTJjYzg1YWE2Y2M2OTkwZTA3YWIyYmM=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "creationTimestamp": 1615739844599,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "blueprints": [],
+    "lastLiquibaseTimestamp": 1615741840000
+  }
+}

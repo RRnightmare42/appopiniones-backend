@@ -1,0 +1,58 @@
+{
+  "fluentMethods": true,
+  "clientRootFolder": "",
+  "relationships": [
+    {
+      "relationshipName": "tema",
+      "otherEntityName": "tema",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "usuario"
+    },
+    {
+      "relationshipName": "mensaje",
+      "otherEntityName": "mensaje",
+      "relationshipType": "one-to-many",
+      "otherEntityRelationshipName": "usuario"
+    }
+  ],
+  "fields": [
+    {
+      "fieldName": "username",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "unique", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "5",
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "password",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMinlength": "8",
+      "fieldValidateRulesMaxlength": "20"
+    },
+    {
+      "fieldName": "photo",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image",
+      "fieldValidateRules": []
+    },
+    {
+      "fieldName": "creationDate",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "messages",
+      "fieldType": "Integer"
+    }
+  ],
+  "changelogDate": "20210314165705",
+  "dto": "no",
+  "searchEngine": false,
+  "service": "serviceClass",
+  "entityTableName": "usuario",
+  "databaseType": "sql",
+  "readOnly": false,
+  "jpaMetamodelFiltering": false,
+  "pagination": "pagination"
+}
